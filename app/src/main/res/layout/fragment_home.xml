@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darko"
+    android:tag="homeFront">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/darko"
+        android:padding="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+
+            android:text="RssPlayer v0.3.1 by \n Oussama and Achraf"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+
+
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rss"
+            tools:srcCompat="@drawable/rss"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <Button
+                android:id = "@+id/rssFile"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Rss Player"
+
+                android:background="@drawable/clickme_button"
+                android:textColor="#ffffff"
+
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:textSize="25sp"
+
+
+                />
+            <Button
+                android:id = "@+id/about"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="About"
+
+                android:background="@drawable/clickme_button"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:textSize="25sp"
+
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

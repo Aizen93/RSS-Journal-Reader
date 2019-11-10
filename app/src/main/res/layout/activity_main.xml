@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container123"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:name="com.example.oussama_achraf.mplrss.fragments.HomeFragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </LinearLayout>
+
+</FrameLayout>

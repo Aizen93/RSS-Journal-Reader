@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/darko"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+
+
+            >
+
+            <EditText
+                android:id="@+id/editTextLink"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.9"
+
+                android:background="@drawable/rounded_red_border"
+                android:hint="type ..."
+                android:inputType="text"
+                android:paddingHorizontal="6dp"
+                android:paddingStart="30dp"
+                android:textColor="@color/darko"
+                android:textColorHint="@color/darko"
+
+                />
+
+            <ImageView
+                android:id="@+id/buttonDownload"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.1"
+                android:background="@android:drawable/stat_sys_download"
+                tools:srcCompat="@android:drawable/stat_sys_download" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewLoading"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="state of downloading here ... "
+            android:textColor="@color/darko" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fadeScrollbars="false"
+            android:progressBackgroundTint="@color/darko"
+            android:scrollbarSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/stopme_button"
+                android:text="cancel downloading"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/showHideButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/clickme_button"
+                android:onClick="hideShowHistory"
+                android:text="show/hide history"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/searchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/lighto"
+        android:src="@drawable/loupou"
+        app:fabSize="normal"
+
+        />
+
+</FrameLayout>

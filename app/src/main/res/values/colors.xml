@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+<!--
+    <color name="lighto">#02aab0</color>
+    <color name="darko">#00cdac</color>
+    -->
+    <color name="darko">#3b5998</color>
+    <color name="lighto">#dfe3ee</color>
+</resources>
